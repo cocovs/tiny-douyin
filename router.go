@@ -1,12 +1,10 @@
 package main
 
-
 import (
+	"fmt"
 	"github.com/cocovs/tiny-douyin/controller"
 	"github.com/gin-gonic/gin"
-	"fmt"
 )
-
 
 //路由入口
 func initRouter(r *gin.Engine) {
@@ -17,7 +15,6 @@ func initRouter(r *gin.Engine) {
 		return
 	}
 
-	
 	// 提供静态资源的公共服务
 	r.Static("/static", "./public")
 	//创建路由组
